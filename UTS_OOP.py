@@ -129,7 +129,7 @@ class Library:
         book = self.search_book(book_title, None)
         if book:
             if isinstance(book, list):
-                book = book[0]  # Assuming we borrow the first book found in the list
+                book = book[0]
             if book in self.books:
                 self.books.remove(book) 
                 member.borrow_book(book)  
